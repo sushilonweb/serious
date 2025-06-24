@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shriyash Amatya | Laravel Backend Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["Poppins", "sans-serif"],
+            },
+            colors: {
+              primary: "#970e4d",
+              "primary-dark": "#7a0b3e",
+            },
+            animation: {
+              typing:
+                "typing 3.5s steps(40, end), blink-caret .75s step-end infinite",
+              blink: "blink-caret .75s step-end infinite",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #970e4d;
+        }
+      }
+
+      .typing-text {
+        display: inline-block;
+        border-right: 3px solid #970e4d;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3.5s steps(40, end),
+          blink-caret 0.75s step-end infinite;
+      }
+
+      .hero-bg {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("https://ext.same-assets.com/1304481085/3465677634.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .progress-bar {
+        transition: width 2s ease-in-out;
+      }
+    </style>
+  </head>
+  <body class="font-poppins">
+    <!-- Hero Section -->
+    <header
+      id="home"
+      class="hero-bg min-h-screen flex items-center justify-center text-center relative px-4"
+    >
+      <div class="text-white space-y-6 w-full max-w-4xl">
+        <h5
+          class="text-primary text-lg md:text-xl font-bold uppercase tracking-wider"
+        >
+          Hello
+        </h5>
+        <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight">
+          <span id="typing-text" class="typing-text"
+            >I am Shriyash Govinda Amatya.</span
+          >
+        </h1>
+        <p class="text-lg md:text-xl uppercase tracking-wider text-gray-300">
+          Laravel Backend Developer
+        </p>
+        <div class="pt-4">
+          <a
+            href="#about"
+            class="inline-block border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 hover:scale-105 px-8 py-3 rounded font-semibold"
+          >
+            More About Me
+          </a>
+        </div>
+        <div
+          class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex gap-4"
+        >
+          <a
+            href="https://www.linkedin.com/in/shriyash-amatya/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transform hover:scale-110 transition-transform duration-300"
+          >
+            <i
+              class="fab fa-linkedin text-2xl text-white hover:text-primary transition-colors"
+            ></i>
+          </a>
+          <a
+            href="https://github.com/shriyash-sys"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="transform hover:scale-110 transition-transform duration-300"
+          >
+            <i
+              class="fab fa-github text-2xl text-white hover:text-primary transition-colors"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h4 class="text-primary font-bold uppercase tracking-wider mb-4">
+            About Me
+          </h4>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+            Let me introduce myself.
+          </h2>
+        </div>
+        <div class="max-w-4xl mx-auto">
+          <p class="text-lg text-gray-700 leading-relaxed">
+            I am a passionate Laravel Backend Developer specializing in building robust, scalable, and secure web applications. With expertise in the Laravel ecosystem, I develop efficient backend systems, RESTful APIs, and database architectures that power modern web applications. My focus is on writing clean, maintainable code following best practices and design patterns.
+
+            I have experience with Laravel's full stack including Eloquent ORM, Blade templating, Artisan commands, and package development. I'm proficient in implementing authentication (Laravel Sanctum, Passport), authorization, caching, queue systems, and testing with PHPUnit.
+
+            Beyond Laravel, I work with related technologies like MySQL, Redis, Docker, and Git. I'm committed to continuous learning and staying updated with the latest Laravel features and PHP ecosystem advancements to deliver high-quality backend solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile & Skills Section -->
+    <section id="profile" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Profile -->
+          <div>
+            <h3 class="text-2xl font-bold uppercase mb-4">Profile</h3>
+            <p class="text-gray-600 mb-6">
+              Here are some more info about myself to help you get to know me
+              better.
+            </p>
+            <div class="space-y-4">
+              <div>
+                <h5 class="font-semibold text-gray-900">Full Name:</h5>
+                <p class="text-gray-600">Shriyash Govinda Amatya</p>
+              </div>
+              <div>
+                <h5 class="font-semibold text-gray-900">Website:</h5>
+                <p class="text-gray-600">
+                  https://portfolio-website-lovat-ten-81.vercel.app/
+                </p>
+              </div>
+              <div>
+                <h5 class="font-semibold text-gray-900">Email:</h5>
+                <p class="text-gray-600">amatyashriyash16@gmail.com</p>
+              </div>
+              <div>
+                <h5 class="font-semibold text-gray-900">Location:</h5>
+                <p class="text-gray-600">Bharatpur-1, Chitwan</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div>
+            <h3 class="text-2xl font-bold uppercase mb-4">Technical Skills</h3>
+            <p class="text-gray-600 mb-6">Here is a list of my technical skills</p>
+            <div class="space-y-6">
+              <div class="skill-item">
+                <div class="flex justify-between mb-2">
+                  <h5 class="font-medium">Laravel Framework</h5>
+                  <span class="text-sm font-medium">85%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="progress-bar bg-primary h-3 rounded-full"
+                    data-width="85"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-2">
+                  <h5 class="font-medium">PHP</h5>
+                  <span class="text-sm font-medium">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="progress-bar bg-primary h-3 rounded-full"
+                    data-width="80"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-2">
+                  <h5 class="font-medium">MySQL</h5>
+                  <span class="text-sm font-medium">75%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="progress-bar bg-primary h-3 rounded-full"
+                    data-width="75"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-2">
+                  <h5 class="font-medium">RESTful APIs</h5>
+                  <span class="text-sm font-medium">80%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="progress-bar bg-primary h-3 rounded-full"
+                    data-width="80"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-2">
+                  <h5 class="font-medium">Git Version Control</h5>
+                  <span class="text-sm font-medium">70%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="progress-bar bg-primary h-3 rounded-full"
+                    data-width="70"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="flex justify-between mb-2">
+                  <h5 class="font-medium">Docker</h5>
+                  <span class="text-sm font-medium">60%</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                  <div
+                    class="progress-bar bg-primary h-3 rounded-full"
+                    data-width="60"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="#"
+            class="inline-block bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 rounded uppercase tracking-wider font-semibold transition-all duration-300 hover:scale-105"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h4 class="text-primary font-bold uppercase tracking-wider mb-4">
+            Portfolio
+          </h4>
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            My Laravel Projects
+          </h2>
+          <p class="text-lg text-gray-600">
+            Here are some of my Laravel-based backend projects.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <a
+              href="https://www.kathmandufintek.com.np/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block relative"
+            >
+              <img
+                src="https://ext.same-assets.com/1304481085/1329699881.png"
+                alt="Kathmandu Fintek"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Kathmandu Fintek</h3>
+                <p class="text-gray-600">Laravel backend with custom admin panel, payment integration, and user management system.</p>
+              </div>
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <i class="fas fa-external-link-alt text-white text-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <a
+              href="https://internship.ictframe.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block relative"
+            >
+              <img
+                src="https://ext.same-assets.com/1304481085/1874938075.png"
+                alt="ICT Frame Internship"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">ICT Frame Internship</h3>
+                <p class="text-gray-600">Laravel-based internship management system with multi-role authentication and reporting.</p>
+              </div>
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <i class="fas fa-external-link-alt text-white text-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <a
+              href="https://theinsurancediscourse.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block relative"
+            >
+              <img
+                src="https://ext.same-assets.com/1304481085/4272228272.png"
+                alt="Insurance Discourse"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Insurance Discourse</h3>
+                <p class="text-gray-600">Content management system built with Laravel featuring custom analytics dashboard.</p>
+              </div>
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <i class="fas fa-external-link-alt text-white text-2xl"></i>
+              </div>
+            </a>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
+          >
+            <a
+              href="https://academy.w3developers.com.np/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block relative"
+            >
+              <img
+                src="https://ext.same-assets.com/1304481085/3790760680.png"
+                alt="W3 Developers Academy"
+                class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">W3 Developers Academy</h3>
+                <p class="text-gray-600">E-learning platform with Laravel backend, course management, and student progress tracking.</p>
+              </div>
+              <div
+                class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"
+              >
+                <i class="fas fa-external-link-alt text-white text-2xl"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h4 class="text-primary font-bold uppercase tracking-wider mb-4">
+            Services
+          </h4>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            My Backend Development Services
+          </h2>
+          <p class="text-lg text-gray-300">
+            Comprehensive backend solutions tailored to your business needs.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <i class="fas fa-server text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">Laravel Development</h3>
+            <p class="text-gray-300">
+              Custom Laravel application development with clean architecture, following MVC patterns and Laravel best practices.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-plug text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">API Development</h3>
+            <p class="text-gray-300">
+              RESTful API development with Laravel, including documentation, versioning, and integration with frontend applications.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-database text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">Database Design</h3>
+            <p class="text-gray-300">
+              Efficient database schema design, query optimization, and implementation with Eloquent ORM or raw SQL.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-shield-alt text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">Authentication Systems</h3>
+            <p class="text-gray-300">
+              Secure authentication implementations using Laravel Sanctum, Passport, or custom solutions with role-based permissions.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-tasks text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">Task Automation</h3>
+            <p class="text-gray-300">
+              Implementation of queues, jobs, scheduled tasks, and command-line tools to automate business processes.
+            </p>
+          </div>
+          <div class="text-center">
+            <i class="fas fa-bug text-4xl text-primary mb-4"></i>
+            <h3 class="text-xl font-bold mb-4">Testing & Debugging</h3>
+            <p class="text-gray-300">
+              Unit testing, feature testing with PHPUnit, and debugging to ensure application reliability and stability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="py-16 bg-gray-600 text-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+          <div class="py-4 sm:border-r border-gray-400">
+            <p
+              class="text-3xl md:text-4xl font-bold mb-2 text-primary counter"
+              data-target="15"
+            >
+              0
+            </p>
+            <h3 class="text-sm uppercase tracking-wider">Projects Completed</h3>
+          </div>
+          <div class="py-4 sm:border-r border-gray-400">
+            <p
+              class="text-3xl md:text-4xl font-bold mb-2 text-primary counter"
+              data-target="50000"
+            >
+              0
+            </p>
+            <h3 class="text-sm uppercase tracking-wider">Lines of Code</h3>
+          </div>
+          <div class="py-4">
+            <p
+              class="text-3xl md:text-4xl font-bold mb-2 text-primary counter"
+              data-target="3"
+            >
+              0
+            </p>
+            <h3 class="text-sm uppercase tracking-wider">Years Experience</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="py-20 bg-gradient-to-b from-gray-900 to-black text-white"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto">
+          <div class="text-center mb-12">
+            <h4 class="text-primary font-bold uppercase tracking-wider mb-4">
+              Contact
+            </h4>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Let's Build Something Great
+            </h2>
+            <p class="text-lg text-gray-300">
+              Interested in working together? Have questions about my services?
+              Get in touch!
+            </p>
+          </div>
+
+          <form
+            class="space-y-6"
+            action="https://getform.io/f/amdpqgob"
+            method="POST"
+          >
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+                class="w-full bg-transparent border-0 border-b border-gray-500 text-white placeholder-gray-400 py-3 focus:border-primary focus:outline-none transition-colors duration-300"
+              />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                placeholder="Tell me about your project (Optional)"
+                rows="4"
+                class="w-full bg-transparent border border-gray-500 rounded-md text-white placeholder-gray-400 p-3 focus:border-primary focus:outline-none transition-colors duration-300 resize-none"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="w-full bg-primary hover:bg-primary-dark text-white py-3 rounded transition-all duration-300 hover:scale-105 font-semibold"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mt-16 pt-8 border-t border-gray-700"
+        >
+          <p class="text-gray-400 mb-4 md:mb-0">
+            Copyright © 2025 | Shriyash Amatya - Laravel Backend Developer
+          </p>
+          <div class="flex gap-4">
+            <a
+              href="https://www.linkedin.com/in/shriyash-amatya/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="transform hover:scale-110 transition-transform duration-300"
+            >
+              <i
+                class="fab fa-linkedin text-xl text-gray-400 hover:text-primary transition-colors"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/shriyash-sys"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="transform hover:scale-110 transition-transform duration-300"
+            >
+              <i
+                class="fab fa-github text-xl text-gray-400 hover:text-primary transition-colors"
+              ></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+      // Typing Animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const typingText = document.getElementById("typing-text");
+        const text = "I am Shriyash Govinda Amatya.";
+        let index = 0;
+
+        typingText.textContent = "";
+
+        function typeWriter() {
+          if (index < text.length) {
+            typingText.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 150);
+          } else {
+            // Add blinking cursor
+            typingText.classList.add("animate-blink");
+          }
+        }
+
+        typeWriter();
+
+        // Progress Bars Animation
+        function animateProgressBars() {
+          const progressBars = document.querySelectorAll(".progress-bar");
+
+          progressBars.forEach((bar) => {
+            const width = bar.getAttribute("data-width");
+            setTimeout(() => {
+              bar.style.width = width + "%";
+            }, 500);
+          });
+        }
+
+        // Counter Animation
+        function animateCounters() {
+          const counters = document.querySelectorAll(".counter");
+
+          counters.forEach((counter) => {
+            const target = parseInt(counter.getAttribute("data-target"));
+            let current = 0;
+            const increment = target / 30;
+
+            const updateCounter = () => {
+              if (current < target) {
+                current += increment;
+                if (target > 1000) {
+                  // Format large numbers with commas
+                  counter.textContent = Math.ceil(current).toLocaleString() + "+";
+                } else {
+                  counter.textContent = Math.ceil(current) + "+";
+                }
+                setTimeout(updateCounter, 50);
+              } else {
+                if (target > 1000) {
+                  counter.textContent = target.toLocaleString() + "+";
+                } else {
+                  counter.textContent = target + "+";
+                }
+              }
+            };
+
+            updateCounter();
+          });
+        }
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                if (entry.target.id === "profile") {
+                  animateProgressBars();
+                } else if (entry.target.id === "stats") {
+                  animateCounters();
+                }
+              }
+            });
+          },
+          { threshold: 0.5 }
+        );
+
+        // Observe sections
+        observer.observe(document.getElementById("profile"));
+        observer.observe(document.getElementById("stats"));
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
